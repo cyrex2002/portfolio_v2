@@ -2,6 +2,11 @@
     background-color: black;
 }
 
+@font-face {
+    font-family: 'kode_mono';
+    src : url(fonts/Kode_Mono/KodeMono-VariableFont_wght.ttf);
+}
+
 nav {
     height: 100%;
     width: 30px;
@@ -11,22 +16,24 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     box-sizing: border-box;
     
 }
 nav a {
-    padding: 7px 20px;
+    padding: 5px 20px;
+    margin-top: 18px;
     text-decoration: none;
     font-size: 18px;
     display: block;
     transform: rotate(-90deg);
-    margin-bottom: 60px;
-    margin-left: 0px;
     box-sizing: border-box;
     background-color: rgb(39, 39, 39);
-    color: rgb(126, 201, 201);
+    color: rgb(255, 255, 255);
     border-radius: 10%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
+    font-family:kode_mono;
+}
+
+#contact {
+ margin-bottom: 28px;
 }
