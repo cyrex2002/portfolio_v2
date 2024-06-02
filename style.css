@@ -9,20 +9,20 @@
 
 nav {
     height: 100%;
-    width: 30px;
+    width: 0px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-sizing: border-box;
     
 }
-nav a {
-    padding: 5px 20px;
-    margin-top: 18px;
+nav ul a {
+    padding:7px;
+    margin: 0;
     text-decoration: none;
     font-size: 18px;
     display: block;
@@ -30,10 +30,40 @@ nav a {
     box-sizing: border-box;
     background-color: rgb(39, 39, 39);
     color: rgb(255, 255, 255);
-    border-radius: 10%;
     font-family:kode_mono;
+    text-align: center;
 }
 
-#contact {
- margin-bottom: 28px;
+
+#home{
+    margin-top:63px;
+}
+#about{
+    margin-top:63px;
+}
+#projects{
+    margin-top:63px;
+}
+#contact{
+    margin-top:63px;
+    border-bottom-left-radius: 10%;
+    
+}
+
+nav ul a::after {
+    content: '';
+    width: 0px;
+    height:0px;
+    left: 0;  
+}
+nav ul a:hover::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(82, 255, 252);
+    left: 0;
+    bottom: 1px;
+    transition: 0.5s;
+    
 }
