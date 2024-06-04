@@ -4,6 +4,8 @@
 }
 body{
     background-color: black;
+    margin: 0px;
+    padding: 0px;
 }
 
 #horizontal-nav{
@@ -11,22 +13,21 @@ body{
 }
 
 
-nav {
+nav ul li{
     height: 100%;
     width: 0px;
     position: fixed;
     top: 0;
-    left: -3px;
+    left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     box-sizing: border-box;
-    
+    background-color: aquamarine;
 }
 nav ul a {
     padding:7px;
-    margin: 0;
     text-decoration: none;
     font-size: 25px;
     display: block;
@@ -39,11 +40,10 @@ nav ul a {
     border-left: solid 0.5px;
     border-right: solid 0.5px;
     border-color: rgba(255, 255, 255, 0.322);
-    transition: 0.75s;
-    
+    transition: 0.75s;    
 }
-#cyrex{
-    margin-top: 135%;
+/* #cyrex{
+    margin-top: 50px;
 }
 
 #home{
@@ -59,7 +59,7 @@ nav ul a {
 }
 #contact{
     margin-top:95px;    
-}
+} */
 
 nav ul a::after {
     content: '';
@@ -144,16 +144,6 @@ nav ul a:hover::after{
     }
 }
 
-#title-name {
-    font-size: 30px;
-    color: white;
-    font-family: kode_mono;
-    margin: 0;
-    margin: 1px;
-}
-
-
-
 #li-btn a:hover{
     color: aqua;
     transition: 0.5s;
@@ -177,4 +167,23 @@ nav ul a:hover::after{
 }
 #resume-btn:hover{
     transform: scale(1.1);
+}
+
+nav ul p {
+    padding:7px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transform: rotate(-90deg);
+    box-sizing: border-box;
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+    font-family:kode_mono;
+    text-align: center;
+    border-left: solid 0.5px;
+    border-right: solid 0.5px;
+    border-color: rgba(255, 255, 255, 0.322);
+    transition: 0.75s;
+    
 }
