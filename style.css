@@ -2,10 +2,15 @@
     font-family: 'kode_mono';
     src : url(fonts/Kode_Mono/KodeMono-VariableFont_wght.ttf);
 }
+*{
+    margin: 0;
+    padding: 0;
+    font-family:kode_mono;
+    box-sizing: border-box;
+    }
+
 body{
     background-color: black;
-    margin: 0px;
-    padding: 0px;
 }
 
 #horizontal-nav{
@@ -13,35 +18,22 @@ body{
 }
 
 
-nav ul li{
-    height: 100%;
-    width: 30px;
+nav {
+    height: 100vh;
+    width: 0px;
     position: fixed;
     top: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    left: -3px;
-=======
-    left: 0;
->>>>>>> parent of 93be07b (nav bar)
-=======
-    left: 20px;
->>>>>>> ca53c98bc7f42740bc6d63dfb88fe7d3522cdfa2
+    left: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-sizing: border-box;
-    background-color: aquamarine;
+    
 }
-<<<<<<< HEAD
-nav a {
-    padding: 5px 20px;
-    margin-top: 18px;
-=======
 nav ul a {
     padding:7px;
->>>>>>> ca53c98bc7f42740bc6d63dfb88fe7d3522cdfa2
+    margin: 0;
     text-decoration: none;
     font-size: 25px;
     display: block;
@@ -49,17 +41,16 @@ nav ul a {
     box-sizing: border-box;
     background-color: rgb(39, 39, 39);
     color: rgb(255, 255, 255);
-    border-radius: 10%;
     font-family:kode_mono;
-<<<<<<< HEAD
     text-align: center;
     border-left: solid 0.5px;
     border-right: solid 0.5px;
     border-color: rgba(255, 255, 255, 0.322);
-    transition: 0.75s;    
+    transition: 0.75s;
+    
 }
-/* #cyrex{
-    margin-top: 50px;
+#cyrex{   
+    margin-top: 15px;
 }
 
 #home{
@@ -75,7 +66,7 @@ nav ul a {
 }
 #contact{
     margin-top:95px;    
-} */
+}
 
 nav ul a::after {
     content: '';
@@ -160,6 +151,7 @@ nav ul a:hover::after{
     }
 }
 
+
 #li-btn a:hover{
     color: aqua;
     transition: 0.5s;
@@ -183,32 +175,25 @@ nav ul a:hover::after{
 }
 #resume-btn:hover{
     transform: scale(1.1);
-<<<<<<< HEAD
-=======
+}
+#cyrex-container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    color: aliceblue;
+    justify-content:center;
+    margin-top: 1%;
+    padding: 10px 5%;
+}
+#pfp-pic{
+    width: 400px;
+    border-radius: 5%;
 }
 
-#contact {
- margin-bottom: 28px;
->>>>>>> parent of 93be07b (nav bar)
-=======
-}
+#cyrex-container div{
+    margin: 150px;
 
-nav ul p {
-    padding:7px;
-    margin: 0;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-    transform: rotate(-90deg);
-    box-sizing: border-box;
-    background-color: rgb(39, 39, 39);
-    color: rgb(255, 255, 255);
-    font-family:kode_mono;
-    text-align: center;
-    border-left: solid 0.5px;
-    border-right: solid 0.5px;
-    border-color: rgba(255, 255, 255, 0.322);
-    transition: 0.75s;
-    
->>>>>>> ca53c98bc7f42740bc6d63dfb88fe7d3522cdfa2
+}
+#pro{
+    font-size: 100px;
 }
