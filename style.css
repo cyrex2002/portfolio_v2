@@ -127,7 +127,10 @@ nav ul a:hover::after{
 #resume-btn{ 
     right: 10px;
     height:45px;
-    width: 100px;
+    width: 100px;   
+}
+#resume-btn a{
+    color: aqua;
 }
 
 @media (max-width: 600px) {
@@ -167,15 +170,13 @@ nav ul a:hover::after{
     color: aqua;
     transition: 0.5s;
 }
-#li-btn:hover{
+
+#li-btn:hover,
+#git-btn:hover,
+#resume-btn:hover {
     transform: scale(1.1);
 }
-#git-btn:hover{
-    transform: scale(1.1);
-}
-#resume-btn:hover{
-    transform: scale(1.1);
-}
+
 #cyrex-container{
     display: flex;
     flex-wrap: wrap-reverse;
@@ -183,7 +184,7 @@ nav ul a:hover::after{
     color: aliceblue;
     justify-content:center;
     margin-top: 1%;
-    padding: 10px 5%;
+    padding: 10px 1%;
 }
 #pfp-pic{
     width: 400px;
@@ -191,9 +192,12 @@ nav ul a:hover::after{
 }
 
 #cyrex-container div{
-    margin: 150px;
+    margin: 140px;
 
 }
 #pro{
     font-size: 100px;
+}
+#pro span{
+ color: aqua;
 }
