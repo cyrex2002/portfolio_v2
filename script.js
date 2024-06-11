@@ -1,20 +1,12 @@
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const interval = setInterval(() => {
-    const targetElement = document.querySelector('#pro span');
-    targetElement.onmouseover = event => {
-        event.target.innerText = event.target.innerText.split("")
-            .map((letter, index) => {
-                if (index < 5) {
-                    return event.target.dataset.value[index];
-                }
-                return letters[Math.floor(Math.random() * 26)];
-            })
-            .join("");
 
-        if (iteration >= event.target.dataset.value.length) {
-            clearInterval(interval);
-        }
 
-        iteration += 3;
-    };
-}, 30);
+var texts = ["esginer", "eveopler","esginer"];
+var count = 0;
+var textElement = document.querySelector("#pro span");
+
+setInterval(changeText, 3000); // Change text every 1 second
+
+function changeText() {
+    textElement.textContent = texts[count];
+    count < 1 ? count++ : count = 0;
+}

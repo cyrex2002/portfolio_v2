@@ -199,5 +199,10 @@ nav ul a:hover::after{
     font-size: 100px;
 }
 #pro span{
- color: aqua;
+    color: aqua;
+    display: inline-block;
+    width: 200px; /* Adjust this value as needed */
+    white-space: nowrap;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
 }
